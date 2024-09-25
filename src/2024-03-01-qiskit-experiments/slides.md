@@ -36,7 +36,7 @@ layoutClass: gap-16
 
 ::right::
 
-<img src="/images/experimentarch.png" alt="experimentarch" class="w-[80%] m-auto" />
+<img src="./images/experimentarch.png" alt="experimentarch" class="w-[80%] m-auto" />
 
 ---
 
@@ -239,7 +239,7 @@ layoutClass: gap-16
   - 由于退相干 (decoherence) 机制，在一定的延迟 (delay) 之后，处于激发态的量子比特可能回到基态
   - $t$ 时间后测得 $\ket{1}$ 的概率为 $P(\ket{1}) = A\mathrm{e}^{-t/T_1}+B$
 - 量子线路：
-  ![t1](/images/t1.png)
+  ![t1](./images/t1.png)
 
 ::right::
 
@@ -392,8 +392,8 @@ layoutClass: gap-16
   - 通过计算 ERC (Error Per Clifford) 可以估计量子设备的误差
   - 可插入额外的门 (interleaved gates) 以估计特定门的误差
 - 量子线路：
-  ![rb_1](/images/rb_1.png)
-  ![rb_2](/images/rb_2.png)
+  ![rb_1](./images/rb_1.png)
+  ![rb_2](./images/rb_2.png)
 
 ::right::
 
