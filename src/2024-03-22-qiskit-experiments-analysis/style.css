@@ -1,0 +1,11 @@
+:not(pre) > code {
+  @apply !font-normal;
+}
+
+h2 {
+  @apply mb-4;
+}
+
+li > p {
+  @apply !leading-[1.8em];
+}

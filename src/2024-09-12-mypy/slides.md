@@ -1,6 +1,6 @@
 ---
 fonts:
-  sans: Inter, "Inter Variable Text", "Source Han Sans SC", "Source Han Sans SC VF"
+  sans: "Inter, Inter Variable Text, Source Han Sans SC, Source Han Sans SC VF"
   mono: "Cascadia Code, Source Han Sans SC, Source Han Sans SC VF"
   provider: none
   fallbacks: false

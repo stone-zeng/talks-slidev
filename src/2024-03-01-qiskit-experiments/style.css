@@ -1,5 +1,5 @@
 :not(pre) > code {
-  @apply font-normal;
+  @apply !font-normal;
 }
 
 h2 {

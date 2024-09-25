@@ -1,8 +1,7 @@
 ---
-title: "Qiskit Experiments: Analysis"
 fonts:
-  sans: "IBM Plex Sans, Source Han Sans SC"
-  mono: "IBM Plex Mono, Source Han Sans SC"
+  sans: "IBM Plex Sans, Source Han Sans SC, Source Han Sans SC VF"
+  mono: "IBM Plex Mono, Source Han Sans SC, Source Han Sans SC VF"
   provider: none
   fallbacks: false
 ---
@@ -157,7 +156,7 @@ layoutClass: gap-16
 
 ## 曲线分析
 
-<img src="https://qiskit-extensions.github.io/qiskit-experiments/_images/curve_analysis_structure.png" alt="curve_analysis_structure" class="w-[90%] m-auto" />
+<img src="/images/curve_analysis_structure.png" alt="curve_analysis_structure" class="w-[90%] m-auto" />
 
 ```py
 class CurveAnalysis:
@@ -285,6 +284,6 @@ class GaussianAnalysis(curve.CurveAnalysis):
 - Plotter：`CurvePlotter`、`IQPlotter`
 
 <div class="flex gap-8 mt-4 mx-16">
-  <img src="https://qiskit-extensions.github.io/qiskit-experiments/_images/data_processor_1_0.png" alt="curve_plotter" class="w-[50%]" />
-  <img src="https://qiskit-extensions.github.io/qiskit-experiments/_images/data_processor_3_0.png" alt="iq_plotter" class="w-[50%]" />
+  <img src="/images/curve_plotter.png" alt="curve_plotter" class="w-[50%]" />
+  <img src="/images/iq_plotter.png" alt="iq_plotter" class="w-[50%]" />
 </div>
