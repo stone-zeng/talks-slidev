@@ -2,7 +2,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --base /2024-09-12-mypy/ --out ../../dist/2024-09-12-mypy",
     "dev": "slidev",
     "export": "slidev export --with-toc"
   },

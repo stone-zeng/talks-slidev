@@ -2,7 +2,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --base /2024-03-22-qiskit-experiments-analysis/ --out ../../dist/2024-03-22-qiskit-experiments-analysis",
     "dev": "slidev",
     "export": "slidev export --with-toc"
   },

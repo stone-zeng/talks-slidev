@@ -2,7 +2,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --base /2024-11-15-qec-101/ --out ../../dist/2024-11-15-qec-101",
     "dev": "slidev",
     "export": "slidev export --with-toc"
   },

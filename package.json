@@ -2,5 +2,8 @@
   "author": "Xiangdong Zeng",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.5.0"
+  "packageManager": "pnpm@9.5.0",
+  "scripts": {
+    "build": "pnpm -r run build"
+  }
 }
