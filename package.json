@@ -1,5 +1,6 @@
 {
   "author": "Xiangdong Zeng",
   "type": "module",
-  "private": true
+  "private": true,
+  "packageManager": "pnpm@9.5.0"
 }

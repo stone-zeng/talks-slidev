@@ -1,5 +1,7 @@
 # [Slidev](https://sli.dev) sources for my talks
 
+- 2024-11-15-qec-101:
+  - [Source](/src/2024-11-15-qec-101/slides.md) · [PDF](https://github.com/stone-zeng/talks/blob/main/PDF/2024-11-15-qec-101.pdf)
 - 2024-09-12-mypy:
   - [Source](/src/2024-09-12-mypy/slides.md) · [PDF](https://github.com/stone-zeng/talks/blob/main/PDF/2024-09-12-mypy.pdf)
 - 2024-03-22-qiskit-experiments-analysis:
