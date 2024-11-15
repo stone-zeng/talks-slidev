@@ -1,10 +1,11 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
+  "redirects": [
     {
       "source": "/",
-      "destination": "https://github.com/stone-zeng/talks-slidev"
+      "destination": "https://github.com/stone-zeng/talks-slidev",
+      "permanent": false
     }
   ]
 }
