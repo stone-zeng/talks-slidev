@@ -1,0 +1,15 @@
+h2 {
+  @apply mb-6;
+}
+
+td {
+  @apply !py-2;
+}
+
+th {
+  @apply !font-bold;
+}
+
+.katex {
+  @apply !text-[1.1em];
+}

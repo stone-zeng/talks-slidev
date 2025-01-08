@@ -1,5 +1,9 @@
 # [Slidev](https://sli.dev) sources for my talks
 
+- 2025-01-08-willow:
+  - [Slide](https://talks.stone-zeng.site/2025-01-08-willow) ·
+    [PDF](https://github.com/stone-zeng/talks/blob/main/PDF/2025-01-08-willow.pdf) ·
+    [Source](/src/2025-01-08-willow/slides.md)
 - 2024-11-15-qec-101:
   - [Slide](https://talks.stone-zeng.site/2024-11-15-qec-101) ·
     [PDF](https://github.com/stone-zeng/talks/blob/main/PDF/2024-11-15-qec-101.pdf) ·
@@ -21,6 +25,6 @@ More talks are available at [stone-zeng/talks](https://github.com/stone-zeng/tal
 
 ---
 
-Copyright &copy; 2024 by Xiangdong Zeng.
+Copyright &copy; 2024&ndash;2025 by Xiangdong Zeng.
 
 Licensed under the [CC BY-SA 4.0](LICENSE) License.

@@ -2,12 +2,13 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build --base /2024-11-15-qec-101/ --out ../../dist/2024-11-15-qec-101",
+    "build": "slidev build --base /2025-01-08-willow/ --out ../../dist/2025-01-08-willow",
     "dev": "slidev",
     "export": "slidev export --with-toc"
   },
   "devDependencies": {
     "@slidev/cli": "0.51.0-beta.4",
-    "@slidev/theme-default": "^0.25.0"
+    "@slidev/theme-default": "^0.25.0",
+    "playwright-chromium": "^1.49.1"
   }
 }
