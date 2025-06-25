@@ -440,7 +440,7 @@ layoutClass: gap-16
 
 <figure class="flex flex-col items-center gap-6 mt-8">
   <img src="./images/topological-order-paradigm.svg" alt="topological-order-paradigm" class="w-160" />
-  <figcaption class="text-sm opacity-50">From Xiao-Gang Wen (arXiv:0903.1069)</figcaption>
+  <figcaption class="text-sm opacity-50">From Xiao-Gang Wen (<a href="https://arxiv.org/abs/0903.1069" target="_blank">arXiv:0903.1069</a>)</figcaption>
 </figure>
 
 ---

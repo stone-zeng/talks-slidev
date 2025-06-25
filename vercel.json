@@ -7,5 +7,31 @@
       "destination": "https://github.com/stone-zeng/talks-slidev",
       "permanent": false
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/2024-03-01-qiskit-experiments/(.*)",
+      "destination": "/2024-03-01-qiskit-experiments/index.html"
+    },
+    {
+      "source": "/2024-03-22-qiskit-experiments-analysis/(.*)",
+      "destination": "/2024-03-22-qiskit-experiments-analysis/index.html"
+    },
+    {
+      "source": "/2024-09-12-mypy/(.*)",
+      "destination": "/2024-09-12-mypy/index.html"
+    },
+    {
+      "source": "/2024-11-15-qec-101/(.*)",
+      "destination": "/2024-11-15-qec-101/index.html"
+    },
+    {
+      "source": "/2025-01-08-willow/(.*)",
+      "destination": "/2025-01-08-willow/index.html"
+    },
+    {
+      "source": "/2025-06-25-tqc/(.*)",
+      "destination": "/2025-06-25-tqc/index.html"
+    }
   ]
 }
