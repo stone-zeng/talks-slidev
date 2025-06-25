@@ -2,12 +2,13 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build --base /2024-03-22-qiskit-experiments-analysis/ --out ../../dist/2024-03-22-qiskit-experiments-analysis",
+    "build": "slidev build --base /2025-04-25-tqc/ --out ../../dist/2025-04-25-tqc",
     "dev": "slidev",
     "export": "slidev export --with-toc"
   },
   "devDependencies": {
     "@slidev/cli": "51.8.1",
-    "@slidev/theme-default": "^0.25.0"
+    "@slidev/theme-default": "^0.25.0",
+    "playwright-chromium": "^1.53.1"
   }
 }

@@ -1,0 +1,20 @@
+html {
+  font-feature-settings: "ss03", "cv05", "cv08";
+}
+
+.slidev-layout.cover h1 {
+  @apply text-5xl;
+}
+
+h2 {
+  @apply mb-6;
+}
+
+h2,
+li {
+  @apply whitespace-nowrap;
+}
+
+.katex {
+  @apply !text-[1.1em];
+}

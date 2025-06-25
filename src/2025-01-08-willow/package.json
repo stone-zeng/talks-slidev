@@ -7,8 +7,8 @@
     "export": "slidev export --with-toc"
   },
   "devDependencies": {
-    "@slidev/cli": "0.51.0-beta.4",
+    "@slidev/cli": "51.8.1",
     "@slidev/theme-default": "^0.25.0",
-    "playwright-chromium": "^1.49.1"
+    "playwright-chromium": "^1.53.1"
   }
 }

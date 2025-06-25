@@ -1,5 +1,9 @@
 # [Slidev](https://sli.dev) sources for my talks
 
+- 2025-06-25-tqc:
+  - [Slide](https://talks.stone-zeng.site/2025-06-25-tqc) ·
+    [PDF](https://github.com/stone-zeng/talks/blob/main/PDF/2025-06-25-tqc.pdf) ·
+    [Source](/src/2025-06-25-tqc/slides.md)
 - 2025-01-08-willow:
   - [Slide](https://talks.stone-zeng.site/2025-01-08-willow) ·
     [PDF](https://github.com/stone-zeng/talks/blob/main/PDF/2025-01-08-willow.pdf) ·
