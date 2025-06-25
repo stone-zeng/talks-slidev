@@ -1,6 +1,7 @@
 {
-  "cleanUrls": true,
   "trailingSlash": false,
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist",
   "redirects": [
     {
       "source": "/",
