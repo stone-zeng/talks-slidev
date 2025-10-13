@@ -1,5 +1,9 @@
 .DS_Store
+_gh-pages/
 .vscode/
 dist/
 node_modules/
+temp/
+
+index.html
 slides-export.pdf

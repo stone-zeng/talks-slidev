@@ -1,2 +1,10 @@
 packages:
-  - 'src/*'
+  - src/*
+
+catalog:
+  '@slidev/cli': ^52.2.5
+  '@slidev/theme-default': ^0.25.0
+  playwright-chromium: ^1.56.0
+
+patchedDependencies:
+  slidev-workspace@0.2.3: patches/slidev-workspace@0.2.3.patch

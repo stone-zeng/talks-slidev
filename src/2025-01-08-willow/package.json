@@ -2,13 +2,13 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build --base /2025-01-08-willow/ --out ../../dist/2025-01-08-willow",
-    "dev": "slidev",
+    "build": "slidev build",
+    "dev": "slidev --base /2025-01-08-willow/",
     "export": "slidev export --with-toc"
   },
   "devDependencies": {
-    "@slidev/cli": "51.8.1",
-    "@slidev/theme-default": "^0.25.0",
-    "playwright-chromium": "^1.53.1"
+    "@slidev/cli": "catalog:",
+    "@slidev/theme-default": "catalog:",
+    "playwright-chromium": "catalog:"
   }
 }
