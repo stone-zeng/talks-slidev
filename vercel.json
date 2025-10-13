@@ -2,13 +2,6 @@
   "trailingSlash": false,
   "buildCommand": "pnpm build",
   "outputDirectory": "_gh-pages",
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "https://github.com/stone-zeng/talks-slidev",
-      "permanent": false
-    }
-  ],
   "rewrites": [
     {
       "source": "/2024-03-01-qiskit-experiments/(.*)",
