@@ -1,4 +1,8 @@
 ---
+title: "Introduction to Willow"
+author: "Xiangdong Zeng"
+date: 2025-01-08
+transition: fade
 fonts:
   sans: "Inter, Inter Variable Text"
   provider: none

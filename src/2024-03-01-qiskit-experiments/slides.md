@@ -1,4 +1,8 @@
 ---
+title: "Qiskit Experiments"
+author: "Xiangdong Zeng"
+date: 2024-03-01
+transition: fade
 fonts:
   sans: "IBM Plex Sans, Source Han Sans SC, Source Han Sans SC VF"
   mono: "IBM Plex Mono, Source Han Sans SC, Source Han Sans SC VF"
@@ -112,7 +116,7 @@ layoutClass: gap-16
   program = """
       OPENQASM 3.0;
       include "stdgates.inc";
-  
+
       input float[64] a;
       qubit[3] q;
       bit[2] mid;
@@ -139,7 +143,7 @@ layoutClass: gap-16
 ```py
 # 构建量子线路（Bell 态）
 from qiskit import QuantumCircuit
- 
+
 circ = QuantumCircuit(2, 2)
 circ.h(0)
 circ.cx(0, 1)

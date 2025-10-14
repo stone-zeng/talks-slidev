@@ -1,4 +1,8 @@
 ---
+title: "Mypy Introduction"
+author: "Xiangdong Zeng"
+date: 2024-09-12
+transition: fade
 fonts:
   sans: "Inter, Inter Variable Text, Source Han Sans SC, Source Han Sans SC VF"
   mono: "Cascadia Code, Source Han Sans SC, Source Han Sans SC VF"

@@ -1,4 +1,8 @@
 ---
+title: "QEC 101"
+author: "Xiangdong Zeng"
+date: 2024-11-15
+transition: fade
 fonts:
   sans: "Inter, Inter Variable Text, Source Han Sans SC, Source Han Sans SC VF"
   provider: none
