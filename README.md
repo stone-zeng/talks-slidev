@@ -29,6 +29,6 @@ More talks are available at [stone-zeng/talks](https://github.com/stone-zeng/tal
 
 ---
 
-Copyright &copy; 2024&ndash;2025 by Xiangdong Zeng.
+Copyright &copy; 2024&ndash;2026 by Xiangdong Zeng.
 
 Licensed under the [CC BY-SA 4.0](LICENSE) License.
