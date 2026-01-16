@@ -1,7 +1,7 @@
 {
   "trailingSlash": false,
   "buildCommand": "pnpm build",
-  "outputDirectory": "_gh-pages",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/2024-03-01-qiskit-experiments/(.*)",
