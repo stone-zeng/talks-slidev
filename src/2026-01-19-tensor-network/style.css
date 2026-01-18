@@ -1,0 +1,37 @@
+html {
+  font-feature-settings: 'ss03', 'cv05', 'cv08';
+}
+
+.slidev-layout.cover h1 {
+  @apply text-5xl;
+}
+
+h2 {
+  @apply !mb-4;
+}
+
+h1,
+h2 {
+  @apply font-serif text-red-700 dark:text-red-500;
+}
+
+h2,
+li {
+  @apply whitespace-nowrap;
+}
+
+li img {
+  @apply inline-block;
+}
+
+strong {
+  @apply text-red-700 dark:text-red-500;
+}
+
+figcaption {
+  @apply !text-xs text-neutral-400 dark:text-neutral-500;
+}
+
+.katex {
+  @apply !text-[1.1em];
+}
