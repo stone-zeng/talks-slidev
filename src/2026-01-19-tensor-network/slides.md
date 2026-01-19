@@ -19,8 +19,16 @@ fonts:
 </div>
 
 ---
+layout: section
+---
+
+## Basic concepts
+
+---
 
 ## What is a tensor?
+
+<v-clicks depth="1">
 
 - Most general definition:
   - Tensor describes the structure that you can put two or more objects together, \
@@ -33,6 +41,8 @@ fonts:
   - **Rank** (or degree/order): dimension of the components array
   - **Dimension**: size of each component
 
+</v-clicks>
+
 ---
 
 ## Notations
@@ -42,9 +52,14 @@ fonts:
   - Matrix: $\bm{M} = \sum_{i,j=1}^D M_{ij} \, \bm{e}_i\otimes\bm{e}_j \eqqcolon M_{ij}$
   - Rank-3 tensor: $\bm{T} = \sum_{i,j,k=1}^D T_{ijk} \, \bm{e}_i\otimes\bm{e}_j\otimes\bm{e}_k \eqqcolon T_{ijk}$
   - $\otimes$: **tensor product**, $\bm{e}_i$: bases
+
+<v-click>
+
 - Diagram notation:
   - Use solid shapes (“balls”) for tensors, bonds (“legs”) for indices
   - Examples: <img src="./images/tensors.svg" alt="tensors" class="-translate-y-1 my-1 dark:invert">
+
+</v-click>
 
 ---
 layout: two-cols
@@ -55,22 +70,31 @@ layoutClass: gap-16
 
 - Generalization of inner product and matrix product
 - Computational cost is dependent on the contraction ordering
+
+<v-click>
+
 - Examples:
   - $C_{abc} = \sum_k A_{abk} B_{kc} \eqqcolon A_{ab{\color{#b91c1c}k}} B_{ {\color{#b91c1c}k}c}$
   - $C_{abc} = \sum_{ij} A_{abij} B_{ijc} \eqqcolon A_{ab{\color{#b91c1c}ij}} B_{ {\color{#b91c1c}ij}c}$
 - Use **Einstein notation** to simplify the expressions:
   - Omit the summation symbol
   - Sum over repeated indices
+
+</v-click>
+<v-click>
+
 - Trace:
   - All the indices of a tensor are contracted
   - $\operatorname{tr}(\bm{M}) = \sum_i M_{ii} \eqqcolon M_{ii}$
   - $\bm{AB} \neq \bm{BA}$ in general, but $\operatorname{tr}(\bm{AB}) = \operatorname{tr}(\bm{BA})$
 
+</v-click>
+
 ::right::
 
 <div class="relative translate-y-10 flex justify-center">
-  <img src="./images/contraction.svg" alt="contraction" class="dark:invert">
-  <div v-click.hide class="bg-white absolute w-60 h-48 bottom-0"></div>
+  <img src="./images/contraction.svg" alt="contraction" class="dark:invert" v-click="1">
+  <div class="bg-white absolute w-60 h-48 bottom-0" v-click.hide="2"></div>
 </div>
 
 ---
@@ -80,8 +104,13 @@ layoutClass: gap-16
 - $\bm{M} = \bm{U \Sigma V}^\dagger$, where $\bm{U}$ and $\bm{V}$ are unitary, $\bm{\Sigma}$ is diagonal
 - Truncated SVD: only keep first $r$ singular values in $\bm{\Sigma}$
   - Eckart--Young--Mirsky theorem: gives best rank-$r$ approximation of $\bm{M}$
-  - Moore--Penrose (pseudo)inverse: $\bm{M}^+ = \bm{V \Sigma}^+ \bm{U}^\dagger$
+  - Moore--Penrose (pseudo) inverse: $\bm{M}^+ = \bm{V \Sigma}^+ \bm{U}^\dagger$
+
+<v-click>
+
 - Split a single node into two nodes
+
+</v-click>
 
 <div class="flex justify-center gap-10 mt-4">
   <figure class="flex flex-col gap-2 items-center w-60">
@@ -90,7 +119,7 @@ layoutClass: gap-16
       <a href="https://en.wikipedia.org/wiki/Singular_value_decomposition">https://en.wikipedia.org/wiki/Singular_<wbr>value_decomposition</a>
     </figcaption>
   </figure>
-  <img src="./images/svd-2.svg" alt="svd-2" class="dark:invert">
+  <img src="./images/svd-2.svg" alt="svd-2" class="dark:invert" v-click="1">
 </div>
 
 ---
@@ -101,6 +130,9 @@ layoutClass: gap-16
 ## Tensor network
 
 - A network of tensor units (no magic)
+
+<v-clicks depth="2">
+
 - But why?
   - Time/space complexity **increases exponentially** \
     with the size of system (i.e. Hilbert space is too large)
@@ -111,6 +143,8 @@ layoutClass: gap-16
     - Tensor network states can naturally reveal such properties
     - The same idea can be found in image/video compression
 
+</v-clicks>
+
 ::right::
 
 <figure class="flex flex-col gap-2 items-center translate-x-10 translate-y-30">
@@ -119,6 +153,12 @@ layoutClass: gap-16
     <a href="https://tensornetwork.org">https://tensornetwork.org</a>
   </figcaption>
 </figure>
+
+---
+layout: section
+---
+
+## Algorithms
 
 ---
 layout: two-cols
@@ -131,6 +171,9 @@ layoutClass: gap-16
   - $\Psi_{i_1 i_2 \ldots i_n} = A^{j_1 j_2}_{i_1} \otimes A^{j_2 j_3}_{i_2} \otimes \cdots \otimes A^{j_n j_1}_{i_n}$
   - Physical indices: uncontracted legs ($i_k$)
   - Virtual indices: contracted legs ($j_k$)
+
+<v-clicks>
+
 - Entanglement entropy
   - $S_L = -\operatorname{tr}(\rho_L \log \rho_L) \sim \mathcal{O}(\log\chi)$
   - $\chi$: bond dimension (dimension of virtual bonds)
@@ -139,6 +182,8 @@ layoutClass: gap-16
   - Canonical form
   - Schmidt decomposition for virtual bonds (SVD)
 
+</v-clicks>
+
 ::right::
 
 <figure class="flex flex-col gap-2 items-center mt-24">
@@ -146,8 +191,8 @@ layoutClass: gap-16
   <figcaption class="text-center mt-2 mb-16">
     MPS with open/periodic boundary conditions
   </figcaption>
-  <img src="./images/gauge-freedom.svg" alt="gauge-freedom" class="dark:invert w-4/5">
-  <figcaption class="text-center">
+  <img src="./images/gauge-freedom.svg" alt="gauge-freedom" class="dark:invert w-4/5" v-click="2">
+  <figcaption class="text-center" v-click="2">
     Gauge freedom in MPS
   </figcaption>
 </figure>
@@ -163,6 +208,9 @@ layoutClass: gap-16
   - Variational optimization of MPS to find ground state
   - Ground state: $\ket{\Psi_0} = \argmin_{\ket{\Psi}} \braket{\Psi|H|\Psi} / \braket{\Psi|\Psi}$
   - Sweep through the chain, optimize two sites at a time
+
+<v-clicks>
+
 - Step 1: energy functional minimization:
   - $\mathcal{L} = \braket{\Psi(A)|H|\Psi(A)} - \lambda\braket{\Psi(A)|\Psi(A)}$
   - $\lambda$: Lagrange multiplier
@@ -172,15 +220,17 @@ layoutClass: gap-16
 - Step 2: update MPS tensors
   - Using a truncated SVD
 
+</v-clicks>
+
 ::right::
 
 <figure class="flex flex-col gap-2 items-center mt-16">
-  <img src="./images/dmrg-1.png" alt="dmrg-1" class="dark:invert w-4/5">
-  <figcaption class="text-center mb-8">
+  <img src="./images/dmrg-1.png" alt="dmrg-1" class="dark:invert w-4/5" v-click="1">
+  <figcaption class="text-center mb-8" v-click="1">
     Effective Hamiltonian in DMRG
   </figcaption>
-  <img src="./images/dmrg-2.png" alt="dmrg-2" class="dark:invert w-4/5">
-  <figcaption class="text-center">
+  <img src="./images/dmrg-2.png" alt="dmrg-2" class="dark:invert w-4/5" v-click="2">
+  <figcaption class="text-center" v-click="2">
     Truncated SVD
   </figcaption>
 </figure>
@@ -195,8 +245,16 @@ layoutClass: gap-16
 - Time-evolving block decimation (TEBD)
   - Simulate time evolution: $\ket{\Psi_t} = e^{-iHt} \ket{\Psi_0}$
   - Or imaginary time evolution: $\ket{\Psi_\beta} = e^{-\beta H} \ket{\Psi_0}$
+
+  <v-click>
+
   - Suzuki--Trotter decomposition:
     - $e^{-\tau(A+B)} = e^{-\tau A} e^{-\tau B} + \mathcal{O}(\tau^2)$
+
+  </v-click>
+
+<v-clicks>
+
 - Generalization for arbitrary operators
   - Time evolution operators are close to unitary
   - Requires extra canonicalization step
@@ -204,15 +262,17 @@ layoutClass: gap-16
   - Interpret $Z$ as an evolution of transfer matrix
   - Contract along the imaginary time direction using iTEBD
 
+</v-clicks>
+
 ::right::
 
 <figure class="flex flex-col gap-2 items-center mt-16">
-  <img src="./images/itebd-1.png" alt="itebd-1" class="dark:invert w-4/5">
-  <figcaption class="text-center mb-8">
+  <img src="./images/itebd-1.png" alt="itebd-1" class="dark:invert w-4/5" v-click="1">
+  <figcaption class="text-center mb-8" v-click="1">
     Time evolution with two-site gates
   </figcaption>
-  <img src="./images/itebd-2.png" alt="itebd-2" class="dark:invert w-4/5">
-  <figcaption class="text-center mt-1">
+  <img src="./images/itebd-2.png" alt="itebd-2" class="dark:invert w-4/5" v-click="2">
+  <figcaption class="text-center mt-1" v-click="2">
     Contract and perform SVD truncation
   </figcaption>
 </figure>
@@ -223,7 +283,12 @@ layoutClass: gap-16
 
 - Tensor renormalization group (TRG)
   - Coarse-graining of 2D tensor network (partition function) until a single **fixed-point tensor**
+
+  <v-click>
+
   - Use SVD to split and recombine tensors
+
+  </v-click>
 
 <div class="flex justify-center items-end gap-16 mt-4">
   <figure class="flex flex-col gap-10 items-center">
@@ -232,7 +297,7 @@ layoutClass: gap-16
       Partition function as a tensor network
     </figcaption>
   </figure>
-  <figure class="flex flex-col gap-2 items-center w-96">
+  <figure class="flex flex-col gap-2 items-center w-96" v-click="1">
     <img src="./images/trg-1.png" alt="trg-1" class="dark:invert w-full">
     <img src="./images/trg-2.png" alt="trg-2" class="dark:invert w-4/5">
     <img src="./images/trg-3.png" alt="trg-3" class="dark:invert w-1/3">
@@ -250,13 +315,18 @@ layoutClass: gap-16
 ## TN algorithms: TRG & TNR (2)
 
 - TRG limitations:
+
+  <v-clicks>
+
   - Long-range entanglement in **critical systems**
     - Correlation length $\xi \to \infty$
     - Area-law violated with logarithmic \
       correction: $S_L \sim \log L$
   - Fails to properly renormalize at criticality
 
-<figure class="flex flex-col gap-2 items-center w-120 mt-8">
+  </v-clicks>
+
+<figure class="flex flex-col gap-2 items-center w-120 mt-8" v-click="2">
   <img src="./images/trg-ising.svg" alt="trg-ising">
   <figcaption class="text-center">
     TRG simulation of 2D Ising model
@@ -264,6 +334,8 @@ layoutClass: gap-16
 </figure>
 
 ::right::
+
+<v-click>
 
 <h2>&nbsp;</h2>
 
@@ -283,6 +355,8 @@ layoutClass: gap-16
   </figcaption>
 </figure>
 
+</v-click>
+
 ---
 layout: two-cols
 layoutClass: gap-16
@@ -294,6 +368,9 @@ layoutClass: gap-16
   - Variational ansatz for ground state wavefunction in \
     1D critical systems
   - Use isometries and disentanglers as in TNR
+
+<v-click>
+
 - Tensor network and AdS/CFT correspondence
   - Boundary: CFT (critical system)
   - Bulk: discrete AdS space (hyperbolic geometry) → gravity
@@ -301,6 +378,8 @@ layoutClass: gap-16
     - $S_A = \operatorname{Area}(\gamma_A)/4G_N$
     - Area law of entanglement entropy in CFT corresponds to \
       minimal surface in AdS
+
+</v-click>
 
 ::right::
 
@@ -311,7 +390,7 @@ layoutClass: gap-16
       MERA tensor network
     </figcaption>
   </figure>
-  <figure class="flex flex-col gap-2 items-center w-96">
+  <figure class="flex flex-col gap-2 items-center w-96" v-click="1">
     <img src="./images/mera-ads-cft.png" alt="mera-ads-cft" class="dark:invert w-40">
     <figcaption class="text-center mt-2">
       MERA in hyperbolic geometry → AdS/CFT
