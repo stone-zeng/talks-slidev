@@ -1,5 +1,9 @@
 # [Slidev](https://sli.dev) sources for my talks
 
+- 2026-01-19-tensor-network:
+  - [Slide](https://talks.stone-zeng.site/2026-01-19-tensor-network) ·
+    [PDF](https://github.com/stone-zeng/talks/blob/main/PDF/2026-01-19-tensor-network.pdf) ·
+    [Source](/src/2026-01-19-tensor-network/slides.md)
 - 2025-06-25-tqc:
   - [Slide](https://talks.stone-zeng.site/2025-06-25-tqc) ·
     [PDF](https://github.com/stone-zeng/talks/blob/main/PDF/2025-06-25-tqc.pdf) ·
