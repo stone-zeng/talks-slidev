@@ -1,2 +1,5 @@
 slidesDir:
   - src
+
+exclude:
+  - 2026-01-19-beijing-quantum

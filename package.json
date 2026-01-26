@@ -8,6 +8,6 @@
     "build": "slidev-workspace build"
   },
   "devDependencies": {
-    "slidev-workspace": "^0.7.2"
+    "slidev-workspace": "^0.8.0"
   }
 }

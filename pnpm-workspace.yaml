@@ -4,4 +4,4 @@ packages:
 catalog:
   '@slidev/cli': ^52.11.3
   '@slidev/theme-default': ^0.25.0
-  playwright-chromium: ^1.57.0
+  playwright-chromium: ^1.58.0
